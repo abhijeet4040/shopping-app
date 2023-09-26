@@ -1,0 +1,39 @@
+/* src/styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Additional CSS styles can be added here */
+
+.logoFontPhone{
+    color: #000;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Lato;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 90.909% */
+}
+
+.logoFont{
+    color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Lato;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 62.5% */
+}
+
+.linkFont{
+    color: var(--text-color-light-secondary-text, #555);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+
+}
