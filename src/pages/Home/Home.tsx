@@ -1,6 +1,7 @@
-import { ComponentCardContainer } from "../../common/ComponentCardContainer/ComponentCountdownCardContainer"
 import { ComponentHeader } from "../../common/ComponentHeader/ComponentHeader"
 import { FeaturedImages } from "./components/featuredImages/FeaturedImages"
+import { FlashSaleGallery } from "./components/FlashSaleGallery/FlashSaleGallery"
+import { TrendingGallery } from "./components/TrendingGallery/TrendingGallery"
 
 
 
@@ -9,7 +10,8 @@ export const Home = () => {
     <div className="">
       <ComponentHeader/>
       <FeaturedImages/>
-      <ComponentCardContainer title = 'Flash Sale' />
+      <FlashSaleGallery />
+      <TrendingGallery/>
     </div>
   )
 }

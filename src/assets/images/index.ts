@@ -7,6 +7,11 @@ import CountdownCardImg1 from './CountdownCardImages/CountdownCardImg1.png'
 import CountdownCardImg2 from './CountdownCardImages/CountdownCardImg2.png'
 import CountdownCardImg3 from './CountdownCardImages/CountdownCardImg3.png'
 import CountdownCardImg4 from './CountdownCardImages/CountdownCardImg4.png'
+import SaleIcon from './SaleIcon.png'
+import TrendingImage1 from './TrendingImages/TrendingImage1.png'
+import TrendingImage2 from './TrendingImages/TrendingImage2.png'
+import TrendingImage3 from './TrendingImages/TrendingImage3.png'
+import NewArrivals from './TrendingImages/NewArrivalsIcon.png'
 
 
 
@@ -20,5 +25,9 @@ export {
     CountdownCardImg2,
     CountdownCardImg3,
     CountdownCardImg4,
-    
-}
+    SaleIcon,
+    TrendingImage1,
+    TrendingImage2,
+    TrendingImage3,
+    NewArrivals
+}   
