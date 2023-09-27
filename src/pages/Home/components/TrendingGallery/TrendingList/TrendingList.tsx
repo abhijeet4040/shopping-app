@@ -1,5 +1,5 @@
 import { TrendingCardData } from "../../../../../utils/DummyData/DummyData"
-import { TrendingCard } from "./TrendingCard"
+import { TrendingCard } from "./TrendingCard/TrendingCard"
 
 export const TrendingList = () => {
   return (

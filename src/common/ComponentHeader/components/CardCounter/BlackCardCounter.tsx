@@ -6,9 +6,9 @@ import { Counter } from './Counter/Counter'
 
 export const BlackCardCounter = () => {
   return (
-    <div className='flex gap-[4px]'>
+    <div className='flex items-center  gap-[4px]'>
         <CardIconBlack/>
-        <div className='text-white font-lato font-normal text-14 leading-5'>card</div>
+        <div className='text-white font-lato font-normal text-14 leading-5'>Cart</div>
         <Counter/>
     </div>
   )

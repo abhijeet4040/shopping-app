@@ -5,11 +5,18 @@ import { SearchIcon } from "./SearchIcon";
 import { DownArrow } from "./DownArrow";
 import { CategoriesIcon } from "./CategoriesIcon";
 import { DownArrowWhite } from "./DownArrowWhite";
-import { FavoritesIcon } from "./FavoritesIcon";
+import { FavoriteIconBlack } from "./FavoriteIconBlack";
 import { SignInButtonIcon } from "./SignInButtonIcon";
 import { ShopNowIcon } from "./ShopNowIcon";
 import { SideArrow } from "./SideArrow";
 import { ColonIcon } from "./ColonIcon";
+import { FavoriteIconWhite } from "./FavoriteIconWhite";
+import { SideArrowLeft } from "./SideArrowLeft";
+import { SideArrowRight } from "./SideArrowRight";
+import { SendIcon } from "./SendIcon";
+
+
+
 
 
 export {
@@ -20,9 +27,13 @@ export {
     DownArrow,
     CategoriesIcon,
     DownArrowWhite,
-    FavoritesIcon,
+    FavoriteIconBlack,
     SignInButtonIcon,
     ShopNowIcon,
     SideArrow,
     ColonIcon,
+    FavoriteIconWhite,
+    SideArrowLeft,
+    SideArrowRight,
+    SendIcon,
 }

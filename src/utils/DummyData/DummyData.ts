@@ -1,5 +1,5 @@
-import { CountdownCardImg1, CountdownCardImg2, CountdownCardImg3, CountdownCardImg4, TrendingImage1, TrendingImage2, TrendingImage3 } from "../../assets/images"
-import { CountdownCardProps, TrendingCardDataProps } from "../types/types"
+import { CountdownCardImg1, CountdownCardImg2, CountdownCardImg3, CountdownCardImg4, TrendingImage1, TrendingImage2, TrendingImage3, WomenClothesImg1, WomenClothesImg2, WomenClothesImg3, WomenClothesImg4, WomenClothesImg5, WomenClothesImg6, WomenClothesImg7, WomenClothesImg8, WomenClothesImg9 } from "../../assets/images"
+import { CountdownCardProps, TrendingCardDataProps, WomenClothesProps } from "../types/types"
 
 export const CategoryLinksData = ['Woman', 'Male', 'Children', 'Home & Furniture', 'Super Market', 'Cosmetics', 'Shoe & Bag', 'Electronic', 'Sports & Outdoor', 
 'Best seller'  ]
@@ -101,3 +101,104 @@ export const TrendingCardData:TrendingCardDataProps[] = [{
     new: true,
     
 },]
+
+
+export const WomenClothesData:WomenClothesProps[] = [{
+    id: 1,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg1,
+
+},
+{
+    id: 3,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg3,
+
+},
+{
+    id: 4,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg4,
+
+},
+{
+    id: 5,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg5,
+
+},
+{
+    id: 6,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg6,
+
+},
+{
+    id: 7,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg7,
+
+},
+{
+    id: 8,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg8,
+
+},
+{
+    id: 9,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg9,
+
+},
+{
+    id: 2,
+    name: 'Mango',
+    description: 'Kimono & Caftan - Black - Regular fit',
+    price: 228,
+    OriginalPrice: '$290',
+    discount: '-10%',
+    rating: '(289)',
+    img: WomenClothesImg2,
+
+}]

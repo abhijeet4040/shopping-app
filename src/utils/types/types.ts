@@ -21,3 +21,30 @@ export type TrendingCardDataProps = {
     Price: number
     new: boolean
 }
+
+export type WomenClothesProps = {
+    id: number,
+    name: string,
+    description: string,
+    price: number,
+    OriginalPrice: string,
+    discount: string,
+    rating: string,
+    img: string,
+}
+
+export type PromotionalCardProps = {
+    title: string,
+    description: string,
+    bg: string,
+    img: string,
+}
+
+export type LinkListProps = {
+    title:string,
+    link1: string,
+    link2: string,
+    link3: string,
+  
+  }
+  
