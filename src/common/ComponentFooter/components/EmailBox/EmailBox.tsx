@@ -2,7 +2,7 @@ import { SendIcon } from "../../../../assets/icons"
 
 export const EmailBox = () => {
     return (
-        <div className=" flex justify-center absolute left-[30vw]">
+        <div className=" flex justify-center items-center md:mb-[-100px]">
             <div className=" hidden md:flex flex-col justify-center items-center px-[56px] py-[32px] w-[571px] bg-[#7296AB] rounded-lg gap-[23px] ">
                 <p className="text-2xl text-white font-bold">ShopHub</p>
                 <p className="text-sm text-white">Register your email not to miss the last minutes off+ Free delivery</p>

@@ -27,6 +27,19 @@ import PromotionalImage3 from './PromotionalImages/PromotionalImage3.png'
 import PromotionalImage4 from './PromotionalImages/PromotionalImage4.png'
 import PromotionalImage5 from './PromotionalImages/PromotionalImage5.jpeg'
 import Iphone from './IphoneImages/Iphone.png'
+import SocialImages from './footerImages/SocialImages.png'
+import PaymentImages from './footerImages/PayementImages.png'
+import NoResultImg from './ElectronicsPageImages/NoResultsImg.png'
+import CameraImg1 from './ElectronicsPageImages/camera1.png'
+import CameraImg2 from './ElectronicsPageImages/camera2.png'
+import CameraImg3 from './ElectronicsPageImages/camera3.png'
+import CameraImg4 from './ElectronicsPageImages/camera4.png'
+import ProductImg1 from './ProductImages/ProductImg1.png'
+import ProductImg2 from './ProductImages/Productimg2.png'
+import ProductImg3 from './ProductImages/ProductImg3.png'
+import ProductImg4 from './ProductImages/ProductImg4.png'
+import ProductImg5 from './ProductImages/ProductImg5.png'
+import ProductImg6 from './ProductImages/ProductImg6.png'
 
 
 
@@ -59,5 +72,19 @@ export {
     PromotionalImage3,
     PromotionalImage4,
     PromotionalImage5,
-    Iphone
+    Iphone,
+    SocialImages,
+    PaymentImages,
+    NoResultImg,
+    CameraImg1,
+    CameraImg2,
+    CameraImg3,
+    CameraImg4,
+    ProductImg1,
+    ProductImg2,
+    ProductImg3,
+    ProductImg4,
+    ProductImg5,
+    ProductImg6,
+
 }   

@@ -1,18 +1,33 @@
 import { Rating } from "@mui/material"
 import { WomenClothesProps } from "../../utils/types/types"
-import { FavoriteIconWhite } from "../../assets/icons"
+import {  FavoriteBorder, FavoriteOutlined} from "@mui/icons-material"
+
+import { useAppDispatch } from "../../redux/hooks/ToolkitHooks"
+import { ToggleCart, ToggleFav } from "../../redux/slices/FavoritesSlice"
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 
 export const WomanClothesCard = ( cardData: WomenClothesProps ) => {
+
+    const dispatch = useAppDispatch()
+
+    const handleClick = () => dispatch(ToggleFav(cardData.id))
+
+    const handleCartClick = () => dispatch(ToggleCart(cardData.id))
+    
   return (
-    <div className="min-w-[260px] h-[480px] shadow-lg">
-        <div>
-            <img src={cardData.img} alt="#" />
+    <div className="relative min-w-[fit-content] shadow-lg my-3">
+        <div className="">
+            <img  src={cardData.img} alt="#" />
         </div>
-        <div className="flex flex-col p-[20px] justify-evenly gap-[12px]">
+        <div className="flex flex-col p-[20px] justify-evenly  ">
             <div className="flex justify-between">
             <p className="text-[12px] font-bold leading-20">{cardData.name}</p>
-            <FavoriteIconWhite/>
+            <div onClick={handleClick}>
+            {cardData.favorite === true ?  <FavoriteOutlined/> : <FavoriteBorder/>}
+                </div>
             </div>
             <p className="text-[10px] font-bold-400 text-[#555555]">{cardData.description}</p>
             <div className="flex gap-[5px]">
@@ -23,6 +38,9 @@ export const WomanClothesCard = ( cardData: WomenClothesProps ) => {
                 <p className="text-[#FF2E00] font-bold" >{'$'}{cardData.price}</p>
                 <p className="text-[#9D9D9D] line-through">{cardData.OriginalPrice}</p>
                 <p className="text-[#FF2E00]">{cardData.discount}</p>
+            </div>
+            <div className="absolute top-3 right-3" onClick={handleCartClick}>
+                {cardData.cart === true ? <ShoppingCartIcon/> : <AddShoppingCartIcon/> }
             </div>
             
         </div>

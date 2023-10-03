@@ -11,7 +11,7 @@ export const PromotionalCard:React.FC<PromotionalCardProps> = ({ title , descrip
                 <p className="text-white font-lato text-sm font-normal leading-[36px]">{description}</p>
                 <p className="text-white font-lato text-sm font-normal leading-[36px] underline">Explore all category's</p>
             </div>
-            <div className="w-[50%] flex"><img className="object-cover"  src={img} alt="" /></div>
+            <img className="object-cover flex-1 w-[50%]"  src={img} alt="" />
         </div>
     )
 }

@@ -1,3 +1,5 @@
+
+
 export type CardContainerProps = {
     title:string
 }
@@ -31,6 +33,8 @@ export type WomenClothesProps = {
     discount: string,
     rating: string,
     img: string,
+    favorite: boolean,
+    cart: boolean,
 }
 
 export type PromotionalCardProps = {
@@ -48,3 +52,21 @@ export type LinkListProps = {
   
   }
   
+
+  export type hoverListProps = {
+    HovTitle : string,
+    HovLinks : string[]
+   
+}
+
+export type HoverCardProps = {
+    link:string
+    }
+
+    
+export type CameraProps = {
+    name: string,
+    image: string,
+    price: string,
+}
+

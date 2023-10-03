@@ -7,7 +7,7 @@ import { CountdownCardProps } from "../../../../../../utils/types/types"
 
 export const CountdownCard = (cardData: CountdownCardProps) => {
     return (
-        <div className="min-w-[220px] h-[380px] rounded-[8px] justify-evenly flex-col flex items-center shadow-lg md:min-w-[396px]">
+        <div className="min-w-[220px] h-[380px] rounded-[8px] justify-evenly flex-col flex items-center shadow-lg md:min-w-[396px] my-3">
             <div className="flex flex-col">
                 <p className="text-[14px] text-[#9D9D9D]">Deal of the Day</p>
                 <div className="flex">

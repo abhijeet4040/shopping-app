@@ -1,5 +1,4 @@
-import { ComponentFooter } from "../../common/ComponentFooter/ComponentFooter"
-import { ComponentHeader } from "../../common/ComponentHeader/ComponentHeader"
+
 import { FeaturedImages } from "./components/featuredImages/FeaturedImages"
 import { FlashSaleGallery } from "./components/FlashSaleGallery/FlashSaleGallery"
 import { IPhoneGallery } from "./components/IPhoneGallery/IPhoneGallery"
@@ -13,7 +12,7 @@ import { TrendingGallery } from "./components/TrendingGallery/TrendingGallery"
 export const Home = () => {
   return (
     <div className="">
-      <ComponentHeader/>
+      
       <FeaturedImages/>
       <FlashSaleGallery />
       <TrendingGallery/>
@@ -21,7 +20,7 @@ export const Home = () => {
       <PromotionalGallery/>
       <IPhoneGallery/>
       <PromotionalGallery2/>
-      <ComponentFooter/>
+     
       
     </div>
   )

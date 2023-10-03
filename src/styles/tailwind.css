@@ -49,3 +49,12 @@ font-weight: 400;
 line-height: 20px; /* 142.857% */
 
 }
+
+*{
+  /* border: 1px solid black; */
+}
+
+.active{
+  @apply font-bold
+}
+

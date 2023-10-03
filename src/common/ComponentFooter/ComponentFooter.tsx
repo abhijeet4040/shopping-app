@@ -1,5 +1,6 @@
 import { EmailBox } from "./components/EmailBox/EmailBox"
 import { FooterLinks } from "./components/FooterLinks/FooterLinks"
+import { FooterProfile } from "./components/FooterProfile/FooterProfile"
 
 
 export const ComponentFooter = () => {
@@ -7,6 +8,7 @@ export const ComponentFooter = () => {
     <div className="">
         <EmailBox/>
         <FooterLinks/>
+        <FooterProfile/>
     </div>
   )
 }

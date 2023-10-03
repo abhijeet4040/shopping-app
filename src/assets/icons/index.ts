@@ -14,6 +14,10 @@ import { FavoriteIconWhite } from "./FavoriteIconWhite";
 import { SideArrowLeft } from "./SideArrowLeft";
 import { SideArrowRight } from "./SideArrowRight";
 import { SendIcon } from "./SendIcon";
+import { WarningIcon } from "./WarningIcon";
+import { SideArrowRightGrey } from "./SideArrowRightGrey";
+import { BlackCategoriesIcon } from "./BlackCategoriesIcon";
+import { SearchIconWhite } from "./SearchIconWhite";
 
 
 
@@ -36,4 +40,8 @@ export {
     SideArrowLeft,
     SideArrowRight,
     SendIcon,
+    WarningIcon,
+    SideArrowRightGrey,
+    BlackCategoriesIcon,
+    SearchIconWhite,
 }
