@@ -7,6 +7,7 @@ import {
 import { Counter } from "./Counter/Counter";
 import { ToggleCart, decAmount, incAmount } from "../../../../redux/slices/FavoritesSlice";
 import { grey } from "@mui/material/colors";
+import { useNavigate } from "react-router-dom";
 
 export const BlackCardCounter = () => {
   const favoritesData = useAppSelector(
@@ -19,8 +20,10 @@ export const BlackCardCounter = () => {
 
   const totalAmount = CartArr.reduce((total, card) => total + card.price * card.amount , 0);
 
+  const navigate = useNavigate();
+
   return (
-    <div className="group relative">
+    <div onClick={() => navigate('/cart')} className="group relative">
       <div className="flex items-center gap-[4px] ">
         <CardIconBlack />
         <div className="text-white font-lato font-normal text-14 leading-5">

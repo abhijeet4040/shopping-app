@@ -1,13 +1,13 @@
 import LogoImage from './Logo/LogoImage.png'
-import SocialsImage from './Social.png'
-import MenCosmetics from './MenCosmetics.png'
-import FeaturedLeftImage from './FeaturedLeftImage.png'
-import SummerEssentials from './SummerEssentials.png'
+import SocialsImage from './misc/Social.png'
+import MenCosmetics from './misc/MenCosmetics.png'
+import FeaturedLeftImage from './misc/FeaturedLeftImage.png'
+import SummerEssentials from './misc/SummerEssentials.png'
 import CountdownCardImg1 from './CountdownCardImages/CountdownCardImg1.png'
 import CountdownCardImg2 from './CountdownCardImages/CountdownCardImg2.png'
 import CountdownCardImg3 from './CountdownCardImages/CountdownCardImg3.png'
 import CountdownCardImg4 from './CountdownCardImages/CountdownCardImg4.png'
-import SaleIcon from './SaleIcon.png'
+import SaleIcon from './misc/SaleIcon.png'
 import TrendingImage1 from './TrendingImages/TrendingImage1.png'
 import TrendingImage2 from './TrendingImages/TrendingImage2.png'
 import TrendingImage3 from './TrendingImages/TrendingImage3.png'
@@ -40,6 +40,7 @@ import ProductImg3 from './ProductImages/ProductImg3.png'
 import ProductImg4 from './ProductImages/ProductImg4.png'
 import ProductImg5 from './ProductImages/ProductImg5.png'
 import ProductImg6 from './ProductImages/ProductImg6.png'
+import MayLike from './misc/mayLike.png'
 
 
 
@@ -86,5 +87,5 @@ export {
     ProductImg4,
     ProductImg5,
     ProductImg6,
-
+    MayLike
 }   

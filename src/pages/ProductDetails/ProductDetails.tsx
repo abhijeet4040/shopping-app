@@ -1,3 +1,4 @@
+import { ComponentRecommendation } from "../../common/ComponentRecommendation/ComponentRecommendation"
 import { ProductDetailsNavbar } from "./components/ProductDetailsNavbar/ProductDetailsNavbar"
 import { ProductImage } from "./components/ProductImage/ProductImage"
 import { ProductInfo } from "./components/ProductInfo/ProductInfo"
@@ -9,7 +10,7 @@ export const ProductDetails = () => {
         <ProductDetailsNavbar/>
         <ProductImage/>
         <ProductInfo/>
-        
+        <ComponentRecommendation/>
     </div>
   )
 }

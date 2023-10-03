@@ -5,6 +5,7 @@ import { ComponentHeader } from "./common/ComponentHeader/ComponentHeader"
 import { ComponentFooter } from "./common/ComponentFooter/ComponentFooter"
 import { Women } from "./pages/Women/Women"
 import { ProductDetails } from "./pages/ProductDetails/ProductDetails"
+import { Cart } from "./pages/Cart/Cart"
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <Route path="electronics" element = {<Electronics/>} />
       <Route path="women" element = {<Women/>} />
       <Route path=":id" element = {<ProductDetails/>} />
+      <Route path="/cart" element ={<Cart/>} />
       </Routes>
       <ComponentFooter/>
     </div>
