@@ -115,6 +115,8 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg1,
     favorite: false,
     cart: false,
+    amount: 0,
+    
 
 },
 {
@@ -128,6 +130,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg3,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -141,6 +144,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg4,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -154,6 +158,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg5,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -167,6 +172,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg6,
     favorite: false,
     cart: false,
+    amount: 0,
 },
 {
     id: 7,
@@ -179,6 +185,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg7,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -192,6 +199,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg8,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -205,6 +213,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg9,
     favorite: false,
     cart: false,
+    amount: 0,
 
 },
 {
@@ -218,6 +227,7 @@ export const WomenClothesData:WomenClothesProps[] = [{
     img: WomenClothesImg2,
     favorite: false,
     cart: false,
+    amount: 0,
 
 }]
 

@@ -35,6 +35,7 @@ export type WomenClothesProps = {
     img: string,
     favorite: boolean,
     cart: boolean,
+    amount: number,
 }
 
 export type PromotionalCardProps = {

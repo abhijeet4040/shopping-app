@@ -6,6 +6,7 @@ import { useAppDispatch } from "../../redux/hooks/ToolkitHooks"
 import { ToggleCart, ToggleFav } from "../../redux/slices/FavoritesSlice"
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useNavigate } from "react-router-dom"
 
 
 
@@ -16,6 +17,9 @@ export const WomanClothesCard = ( cardData: WomenClothesProps ) => {
     const handleClick = () => dispatch(ToggleFav(cardData.id))
 
     const handleCartClick = () => dispatch(ToggleCart(cardData.id))
+
+    const navigate = useNavigate()
+
     
   return (
     <div className="relative min-w-[fit-content] shadow-lg my-3">
@@ -24,7 +28,7 @@ export const WomanClothesCard = ( cardData: WomenClothesProps ) => {
         </div>
         <div className="flex flex-col p-[20px] justify-evenly  ">
             <div className="flex justify-between">
-            <p className="text-[12px] font-bold leading-20">{cardData.name}</p>
+            <p onClick={()=> navigate(`/${cardData.id}`)}  className="text-[12px] font-bold leading-20">{cardData.name}</p>
             <div onClick={handleClick}>
             {cardData.favorite === true ?  <FavoriteOutlined/> : <FavoriteBorder/>}
                 </div>

@@ -18,6 +18,8 @@ import { WarningIcon } from "./WarningIcon";
 import { SideArrowRightGrey } from "./SideArrowRightGrey";
 import { BlackCategoriesIcon } from "./BlackCategoriesIcon";
 import { SearchIconWhite } from "./SearchIconWhite";
+import { ListDot } from "./ListDot";
+import { LaundryIcon } from "./LaundryIcon";
 
 
 
@@ -44,4 +46,6 @@ export {
     SideArrowRightGrey,
     BlackCategoriesIcon,
     SearchIconWhite,
+    ListDot,
+    LaundryIcon,
 }
