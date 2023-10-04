@@ -1,4 +1,4 @@
-import { Add, CheckBox, Delete, Remove } from "@mui/icons-material";
+import { Add, Delete, Remove } from "@mui/icons-material";
 import { ComponentRecommendation } from "../../common/ComponentRecommendation/ComponentRecommendation";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/ToolkitHooks";
 import {
@@ -7,6 +7,7 @@ import {
   incAmount,
 } from "../../redux/slices/FavoritesSlice";
 import { grey } from "@mui/material/colors";
+import { OrderSummaryBox } from "./Components/OrderSummaryBox/OrderSummaryBox";
 
 export const Cart = () => {
   const CartData = useAppSelector((state) => state.Favorites.favoritesData);
@@ -59,40 +60,7 @@ export const Cart = () => {
             ))}
           </div>
         </div>
-        <div className="bg-slate-300 rounded-lg p-5 justify-between">
-          <p className="text-lg font-bold">Order Summary</p>
-          <div className="flex justify-between">
-            <p>Price:</p>
-            <p>
-              {"$"}
-              {totalAmount}
-            </p>
-          </div>
-          <div className="flex justify-between">
-            <p>Shipping:</p>
-            <p>$0</p>
-          </div>
-          <div className="flex justify-between">
-            <p>Tax</p>
-            <p>$0</p>
-          </div>
-          <div className="flex flex-col justify-between">
-            <p>Discount</p>
-            <p className="text-sm font-light text-red-600">
-              must log in to use Discount code
-            </p>
-          </div>
-          <div className="flex justify-between">
-            <CheckBox />
-            <p>Pack in gift box</p>
-            <p>$10.090</p>
-          </div>
-          <div className="flex justify-between">
-            <p>totalPrice:</p>
-            <p>{totalAmount}</p>
-          </div>
-          <div className="h-[2px] bg-slate-500"></div>
-        </div>
+        <OrderSummaryBox totalAmount={totalAmount} />
       </div>
       <div>
         

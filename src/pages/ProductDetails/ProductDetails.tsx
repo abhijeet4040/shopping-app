@@ -6,7 +6,7 @@ import { ProductInfo } from "./components/ProductInfo/ProductInfo"
 
 export const ProductDetails = () => {
   return (
-    <div className="p-5 sm:p-[50px] xl:p-[90px]">
+    <div className="flex flex-col p-5 sm:p-[50px] xl:p-[90px] gap-7">
         <ProductDetailsNavbar/>
         <ProductImage/>
         <ProductInfo/>

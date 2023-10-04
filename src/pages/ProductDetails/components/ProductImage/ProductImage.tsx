@@ -41,20 +41,20 @@ export const ProductImage = () => {
   const total = Card.price * Card.amount;
 
   return (
-    <div className=" flex flex-col lg:flex-row p-5 md:p-[50px] xl:p-[90px]  justify-center">
-      <div className="flex flex-col-reverse sm:flex-row">
-        <div className="flex flex-row px-5 py-1 h-[162px] sm:h-auto gap-1 overflow-scroll sm:max-h-auto sm:flex-col example">
-          <img className="w-[127px] h-auto" src={ProductImg1} alt="#" />
-          <img className="w-[127px] h-auto" src={ProductImg2} alt="#" />
-          <img className="w-[127px] h-auto" src={ProductImg3} alt="#" />
-          <img className="w-[127px] h-auto" src={ProductImg4} alt="#" />
-          <img className="w-[127px] h-auto" src={ProductImg5} alt="#" />
+    <div className=" flex flex-col xl:flex-row  gap-8  justify-center">
+      <div className="flex flex-col-reverse gap-2 md:flex-row ">
+        <div className="flex flex-row md:px-5 md:py-1 gap-1 md:flex-col example overflow-scroll">
+          <img className="rounded-lg"  src={ProductImg1} alt="#" />
+          <img className="rounded-lg" src={ProductImg2} alt="#" />
+          <img className="rounded-lg" src={ProductImg3} alt="#" />
+          <img className="rounded-lg" src={ProductImg4} alt="#" />
+          <img className="rounded-lg" src={ProductImg5} alt="#" />
         </div>
-        <div className="flex">
-          <img src={ProductImg6} alt="#" />
-        </div>
+        
+        <img src={ProductImg6} alt="#" />
+        
       </div>
-      <div className="p-5 md:p-[50px] xl:p-[90px]">
+      <div className="">
         <div className="flex flex-col items-start gap-8">
           <div>
             <p className="text-lg font-bold">{Card.name}</p>
