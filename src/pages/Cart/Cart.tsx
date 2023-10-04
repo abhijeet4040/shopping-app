@@ -1,11 +1,13 @@
-import { Box, Button, Tab, TextField } from "@mui/material";
+import { Box, Tab } from "@mui/material";
 import { ComponentRecommendation } from "../../common/ComponentRecommendation/ComponentRecommendation";
 import { useAppSelector } from "../../redux/hooks/ToolkitHooks";
 import { TabPanel, TabContext, TabList } from "@mui/lab";
 import { OrderSummaryBox } from "./Components/OrderSummaryBox/OrderSummaryBox";
 import { OrderedCards } from "./Components/OrderedCards/OrderedCards";
 import React from "react";
-import CountrySelect from "../../common/Countryselect/CountrySelect";
+import { CustomerInformation } from "./Components/CustomerInformation/CustomerInformation";
+import { ShippingAndPayment } from "./Components/ShippingAndPayment/ShippingAndPayment";
+import { Confirmation } from "./Components/Confirmation/Confirmation";
 
 export const Cart = () => {
   const CartData = useAppSelector((state) => state.Favorites.favoritesData);
@@ -27,7 +29,7 @@ export const Cart = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col p-5 md:p-[50px] justify-between xl:p-[90px] gap-8">
+      <div className="flex flex-col p-5 md:p-[50px] justify-between xl:p-[90px] gap-4">
         <TabContext value={value}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList
@@ -52,39 +54,19 @@ export const Cart = () => {
             <OrderSummaryBox totalAmount={totalAmount} />
           </TabPanel>
           <TabPanel className="flex gap-8 flex-col lg:flex-row" value="2">
-            <div className="flex flex-col gap-5 flex-1">
-              <p className="font-bold text-xl">Customer Information</p>
-              <form className="flex flex-col gap-5" noValidate>
-                <TextField label="Email" type="email" />
-                <div className="flex flex-col md:flex-row justify-between gap-4">
-                  <TextField className="flex-1" label="Name" type="name" />
-                  <TextField
-                    className="flex-1"
-                    label="Last Name"
-                    type="last name"
-                  />
-                </div>
-                <div className="flex flex-col gap-5">
-                  <p className="text-lg font-semibold">Shipping Address</p>
-
-                  <CountrySelect />
-                  <TextField
-                    className="flex-1"
-                    label="Phone number"
-                    type="phone number"
-                  />
-
-                  <TextField label="Address" type="address" />
-                </div>
-                <Button type="submit" variant="contained" color="primary" sx={{width:300, alignSelf:"center"}} >Submit</Button>
-              </form>
-            </div>
+            <CustomerInformation />
             <OrderSummaryBox totalAmount={totalAmount} />
           </TabPanel>
-          <TabPanel value="3">
-           
+          <TabPanel className="flex flex-col lg:flex-row gap-8" value="3">
+            <ShippingAndPayment />
+            <OrderSummaryBox totalAmount={totalAmount} />
           </TabPanel>
-          <TabPanel value="4">Item Three</TabPanel>
+          <TabPanel className="flex flex-col lg:flex-row gap-8 justify-between" value="4">
+            <Confirmation CartArr={CartArr} totalAmount={totalAmount} />
+            <OrderSummaryBox totalAmount={totalAmount} />
+
+
+          </TabPanel>
         </TabContext>
       </div>
       <ComponentRecommendation />

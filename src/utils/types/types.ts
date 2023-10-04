@@ -75,3 +75,8 @@ export type OrderedCardsProps = {
     CartArr: WomenClothesProps[],
     length: number,
 }
+
+export type ConfirmationProps = {
+    CartArr: WomenClothesProps[],
+    totalAmount: number,
+}

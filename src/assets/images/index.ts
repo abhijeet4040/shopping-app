@@ -41,7 +41,9 @@ import ProductImg4 from './ProductImages/ProductImg4.png'
 import ProductImg5 from './ProductImages/ProductImg5.png'
 import ProductImg6 from './ProductImages/ProductImg6.png'
 import MayLike from './misc/mayLike.png'
-
+import Payment1 from './paymentImages/Payment1.png'
+import Payment2 from './paymentImages/payment2.png'
+import Payment3 from './paymentImages/payment3.png'
 
 
 export {
@@ -87,5 +89,9 @@ export {
     ProductImg4,
     ProductImg5,
     ProductImg6,
-    MayLike
+    MayLike,
+    Payment1,
+    Payment2,
+    Payment3,
+
 }   

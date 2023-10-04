@@ -9,7 +9,7 @@ export type OrderSummaryBoxProps = {
 export const OrderSummaryBox:React.FC<OrderSummaryBoxProps> = ({totalAmount}) => {
   return (
     <div>
-        <div className="flex flex-col bg-slate-300 rounded-lg p-5 justify-between">
+        <div className="flex flex-col bg-slate-300 rounded-lg p-5 gap-4 justify-between">
           <p className="text-lg font-bold">Order Summary</p>
           <div className="flex justify-between">
             <p>Price:</p>
