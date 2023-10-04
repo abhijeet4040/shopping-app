@@ -13,10 +13,12 @@ export const OrderSummaryBox:React.FC<OrderSummaryBoxProps> = ({totalAmount}) =>
           <p className="text-lg font-bold">Order Summary</p>
           <div className="flex justify-between">
             <p>Price:</p>
-            <p>
+            <div className="flex">
+
               {"$"}
               <p>{totalAmount}</p>
-            </p>
+            </div>
+            
           </div>
           <div className="flex justify-between">
             <p>Shipping:</p>

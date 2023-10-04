@@ -71,3 +71,7 @@ export type CameraProps = {
     price: string,
 }
 
+export type OrderedCardsProps = {
+    CartArr: WomenClothesProps[],
+    length: number,
+}

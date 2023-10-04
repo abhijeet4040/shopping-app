@@ -1,13 +1,11 @@
-import { Add, Delete, Remove } from "@mui/icons-material";
+import { Box, Button, Tab, TextField } from "@mui/material";
 import { ComponentRecommendation } from "../../common/ComponentRecommendation/ComponentRecommendation";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks/ToolkitHooks";
-import {
-  ToggleCart,
-  decAmount,
-  incAmount,
-} from "../../redux/slices/FavoritesSlice";
-import { grey } from "@mui/material/colors";
+import { useAppSelector } from "../../redux/hooks/ToolkitHooks";
+import { TabPanel, TabContext, TabList } from "@mui/lab";
 import { OrderSummaryBox } from "./Components/OrderSummaryBox/OrderSummaryBox";
+import { OrderedCards } from "./Components/OrderedCards/OrderedCards";
+import React from "react";
+import CountrySelect from "../../common/Countryselect/CountrySelect";
 
 export const Cart = () => {
   const CartData = useAppSelector((state) => state.Favorites.favoritesData);
@@ -21,49 +19,73 @@ export const Cart = () => {
     0
   );
 
-  const dispatch = useAppDispatch();
+  const [value, setValue] = React.useState("1");
+
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    setValue(newValue);
+  };
 
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col lg:flex-row p-5 md:p-[50px] justify-between xl:p-[90px] gap-8">
-        <div className="flex flex-col gap-8 flex-1">
-          <div className="flex gap-8 ">
-            <p className="font-semibold text-lg">Card</p>
-            <p className="text-slate-400">{length}</p>
-          </div>
-          <div className="flex flex-col gap-6 ">
-            {CartArr.map((card) => (
-              <div className="flex justify-between items-center ">
-                <div className="flex gap-4">
-                  <img
-                    className="w-[58px] h-[70] rounded-xl overflow-hidden"
-                    src={card.img}
-                    alt="#"
+      <div className="flex flex-col p-5 md:p-[50px] justify-between xl:p-[90px] gap-8">
+        <TabContext value={value}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <TabList
+              onChange={handleChange}
+              variant="scrollable"
+              scrollButtons={false}
+              textColor="primary"
+              centered
+              aria-label="lab API tabs example"
+            >
+              <Tab label="Cards" value="1" />
+              <Tab label="Customer Info" value="2" />
+              <Tab label="Shipping & Payment" value="3" />
+              <Tab label="Product Confirmation" value="4" />
+            </TabList>
+          </Box>
+          <TabPanel
+            className="flex flex-col lg:flex-row justify-between gap-8"
+            value="1"
+          >
+            <OrderedCards length={length} CartArr={CartArr} />
+            <OrderSummaryBox totalAmount={totalAmount} />
+          </TabPanel>
+          <TabPanel className="flex gap-8 flex-col lg:flex-row" value="2">
+            <div className="flex flex-col gap-5 flex-1">
+              <p className="font-bold text-xl">Customer Information</p>
+              <form className="flex flex-col gap-5" noValidate>
+                <TextField label="Email" type="email" />
+                <div className="flex flex-col md:flex-row justify-between gap-4">
+                  <TextField className="flex-1" label="Name" type="name" />
+                  <TextField
+                    className="flex-1"
+                    label="Last Name"
+                    type="last name"
                   />
-                  <p>{card.name}</p>
                 </div>
-                <p>{card.price}</p>
-                <div className="flex border-slate-400 rounded-xl border-[2px] h-fit">
-                  <div onClick={() => dispatch(incAmount(card.id))}>
-                    <Add sx={{ color: grey[400] }} />
-                  </div>
-                  <p>{card.amount}</p>
-                  <div onClick={() => dispatch(decAmount(card.id))}>
-                    <Remove sx={{ color: grey[400] }} />
-                  </div>
+                <div className="flex flex-col gap-5">
+                  <p className="text-lg font-semibold">Shipping Address</p>
+
+                  <CountrySelect />
+                  <TextField
+                    className="flex-1"
+                    label="Phone number"
+                    type="phone number"
+                  />
+
+                  <TextField label="Address" type="address" />
                 </div>
-                <div>{card.price * card.amount}</div>
-                <div onClick={() => dispatch(ToggleCart(card.id))}>
-                  <Delete />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <OrderSummaryBox totalAmount={totalAmount} />
-      </div>
-      <div>
-        
+                <Button type="submit" variant="contained" color="primary" sx={{width:300, alignSelf:"center"}} >Submit</Button>
+              </form>
+            </div>
+            <OrderSummaryBox totalAmount={totalAmount} />
+          </TabPanel>
+          <TabPanel value="3">
+           
+          </TabPanel>
+          <TabPanel value="4">Item Three</TabPanel>
+        </TabContext>
       </div>
       <ComponentRecommendation />
     </div>
