@@ -828,7 +828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.14.11":
+"@mui/material@npm:5.14.13":
   version: 5.14.13
   resolution: "@mui/material@npm:5.14.13"
   dependencies:
@@ -3318,7 +3318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.27, postcss@npm:^8.4.30":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.26, postcss@npm:^8.4.30":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -3603,7 +3603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^3.27.1":
+"rollup@npm:^3.25.2":
   version: 3.29.4
   resolution: "rollup@npm:3.29.4"
   dependencies:
@@ -3700,7 +3700,7 @@ __metadata:
     "@emotion/styled": ^11.11.0
     "@mui/icons-material": ^5.14.11
     "@mui/lab": ^5.0.0-alpha.146
-    "@mui/material": ^5.14.11
+    "@mui/material": 5.14.13
     "@reduxjs/toolkit": ^1.9.6
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
@@ -3718,7 +3718,7 @@ __metadata:
     react-router-dom: ^6.16.0
     tailwindcss: ^3.3.3
     typescript: ^5.0.2
-    vite: ^4.4.11
+    vite: 4.4.8
   languageName: unknown
   linkType: soft
 
@@ -4097,14 +4097,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.4.11":
-  version: 4.4.11
-  resolution: "vite@npm:4.4.11"
+"vite@npm:4.4.8":
+  version: 4.4.8
+  resolution: "vite@npm:4.4.8"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
-    postcss: ^8.4.27
-    rollup: ^3.27.1
+    postcss: ^8.4.26
+    rollup: ^3.25.2
   peerDependencies:
     "@types/node": ">= 14"
     less: "*"
@@ -4133,7 +4133,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: c22145c8385343a629cd546054b9da6eee60327540102bdfd1ad897fd2e78e0763ce6a18a9d84fdefde9da8fd2427d3bec9eb2697b47cf4068c7b4b52f7e3e6a
+  checksum: e8ffe688f8a7396b1357778f00cb06d1f3dadad200823c47a1955cf52774a0cbff5ac4d6a8f8d09e26c1d4e588e5815956f9eba02ae301e77a36c3d181a1bc86
   languageName: node
   linkType: hard
 
